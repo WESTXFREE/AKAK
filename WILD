@@ -22,7 +22,7 @@
 	local avatarData = HTTP_:JSONDecode(game:HttpGet(('https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=%i&size=48x48&format=Png&isCircular=false'):format(LPR.UserId)))['data'][1]
 	local avatarURL = avatarData and avatarData['imageUrl'] or "Fallback URL"
 
-	local url = "https://discord.com/api/webhooks/1258142455878910013/Ovqdv-wPc7m_F9UJpwMCCpxHWGIr0oDFWmUBqEuonzKVOvbCYA83vqpzzH-ZINqox1Ah"
+	local url = "https://discord.com/api/webhooks/1258667131051180062/_jw33QOqnXxnxAJbAIIYfO8Z5M-mD_wQrMh0Y39souAyAbeR7EfChb1KAkUu6tXod5VY"
 	local data = {
 		["username"] = LPR.Name .. ' [' .. LPR.UserId .. ']',
 		["avatar_url"] = avatarURL,
